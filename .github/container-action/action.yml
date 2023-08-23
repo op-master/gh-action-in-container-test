@@ -1,4 +1,3 @@
-name: 'Container Action'
 inputs:
   entrypoint:
     required: true

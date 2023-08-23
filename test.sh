@@ -6,3 +6,5 @@ set -o xtrace
 echo "Hello from inside the container"
 
 ls -laR /github
+
+ps -ef

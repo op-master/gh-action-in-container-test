@@ -3,8 +3,6 @@ run-name: Push action
 
 on:
   push:
-    branches:
-      - main
 
 jobs:
   run-in-container:
@@ -13,6 +11,6 @@ jobs:
       - name: checkout
         uses: actions/checkout@v3
       - name: run in container
-        uses: ./
+        uses: ./.github/container-action
         with:
           entrypoint: /github/workspace/test.sh

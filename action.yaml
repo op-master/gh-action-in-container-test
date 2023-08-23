@@ -1,0 +1,7 @@
+name: 'Container Action'
+inputs:
+  entrypoint:
+    required: true
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
